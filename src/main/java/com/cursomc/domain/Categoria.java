@@ -1,13 +1,11 @@
 package com.cursomc.domain;
 
-import java.io.Serializable;
-
 import javax.persistence.Entity;
 
 import com.cursomc.abstratos.ABase;
 
 @Entity
-public class Categoria extends ABase implements Serializable{
+public class Categoria extends ABase {
 	
 	private static final long serialVersionUID = 1L;
 	
