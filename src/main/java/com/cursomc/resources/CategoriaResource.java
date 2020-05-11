@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cursomc.domain.Categoria;
 
 @RestController
-@RequestMapping(value="/Categorias")
+@RequestMapping(value="/categorias")
 public class CategoriaResource {
 
 	@RequestMapping(method = RequestMethod.GET)
@@ -23,6 +23,7 @@ public class CategoriaResource {
 		  List<Categoria> categorias = new ArrayList<Categoria>();
 		  categorias.add(c1);
 		  categorias.add(c2);
+		  
 		  
 		  return categorias;
 	}
