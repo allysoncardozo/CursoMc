@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import com.cursomc.abstratos.ABase;
 
 @Entity
-public class Categoria extends ABase {
+public class Categoria extends ABase<Categoria> {
 	
 	private static final long serialVersionUID = 1L;
 	

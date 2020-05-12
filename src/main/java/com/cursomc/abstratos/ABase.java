@@ -1,26 +1,22 @@
 package com.cursomc.abstratos;
 
 import java.io.Serializable;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public abstract class ABase implements Serializable {
+public abstract class ABase<T> implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer Id;
 
-	public Integer getId() {
-		return Id;
-	}
+	public Integer getId() { return Id; }
 
-	public void setId(Integer id) {
-		Id = id;
+	public void setId(Integer id) { Id = id;
 	}
 
 	@Override
